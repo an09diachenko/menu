@@ -1,0 +1,19 @@
+//Стилевое описание header
+
+.header {
+    padding: 100px 0px;
+    background: {
+        image: url(images/header.jpeg);
+        repeat: no-repeat;
+        size: cover;
+    }
+    min-height: $height;
+    color: $color_white;
+    text-align: center;
+    &__item {
+        
+        &:hover {
+            
+        }
+    }
+}
