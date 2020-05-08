@@ -10,10 +10,37 @@
     min-height: $height;
     color: $color_white;
     text-align: center;
+    
+    
+    h1 {
+        font-size: 90px;
+        text: {
+            transform: lowercase;
+            shadow: 2px 2px 0px #000;
+        }
+        
+        &::after {
+            content: url(images/white.svg);
+        }
+        @include phone () {
+            font-size: 3em;
+        }
+    }
     &__item {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 30px 0px;
+        color: $color_white;
+        text-transform: uppercase;
+        width: 218px;
+        display: inline-block;
+        border: 1px solid $color_white;
+        font-size: 18px;
+        margin: 15px;
         
         &:hover {
-            
+            color: $color_white;
+            background-color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
         }
     }
 }

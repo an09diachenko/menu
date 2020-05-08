@@ -18,6 +18,25 @@ ul {
 p {
   margin: 0; }
 
+.title--white, .title--orange {
+  font-family: "Yeseva One", cursive;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.4em;
+  text-align: center; }
+
+.title--white::after, .title--orange::after {
+  display: block; }
+
+.title--white {
+  color: #fff; }
+  .title--white::after {
+    content: url(images/white.svg); }
+.title--orange {
+  color: #cc9900; }
+  .title--orange::after {
+    content: url(images/vector_orange.svg); }
+
 .header {
   padding: 100px 0px;
   background-image: url(images/header.jpeg);
@@ -26,5 +45,44 @@ p {
   min-height: 750px;
   color: #fff;
   text-align: center; }
+  .header h1 {
+    font-size: 90px;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 0px #000; }
+    .header h1::after {
+      content: url(images/white.svg); }
+    @media screen and (max-width: 576px) {
+      .header h1 {
+        font-size: 3em; } }
+  .header__item {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 218px;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: 18px;
+    margin: 15px; }
+    .header__item:hover {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-decoration: none; }
+
+.about_us {
+  padding: 100px 0px;
+  min-height: 750px;
+  background: url(images/pattern.jpeg), linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+  background-blend-mode: overlay;
+  background-size: contain;
+  box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+.about__dish {
+  width: 100%; }
+
+.about__cook {
+  margin: 15px;
+  transform: translate(40px); }
 
 /*# sourceMappingURL=style.css.map */
