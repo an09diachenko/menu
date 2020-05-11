@@ -18,7 +18,7 @@
         
         &::after {
             @extend %for_title_pseudo;
-            content: url(images/white.svg); 
+            content: url(images/vector_w.svg); 
         }
     }
      &--orange {
@@ -27,7 +27,7 @@
          
         &::after {
             @extend %for_title_pseudo;
-            content: url(images/vector_orange.svg);
+            content: url(images/vector_o.svg);
          }
             
         }

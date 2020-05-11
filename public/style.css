@@ -31,11 +31,11 @@ p {
 .title--white {
   color: #fff; }
   .title--white::after {
-    content: url(images/white.svg); }
+    content: url(images/vector_w.svg); }
 .title--orange {
   color: #cc9900; }
   .title--orange::after {
-    content: url(images/vector_orange.svg); }
+    content: url(images/vector_o.svg); }
 
 .header {
   padding: 100px 0px;
@@ -84,5 +84,88 @@ p {
 .about__cook {
   margin: 15px;
   transform: translate(40px); }
+
+.ingredients {
+  padding: 100px 0px;
+  min-height: 750px;
+  background-image: url(images/bg_green.jpeg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center; }
+  .ingredients__photos {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0; }
+  .ingredients__photo {
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    margin: 7.5px;
+    overflow: hidden;
+    border: 5px solid #cc9900; }
+    @media screen and (max-width: 576px) {
+      .ingredients__photo {
+        width: 100px;
+        height: 100px; } }
+  .ingredients img {
+    height: 100%;
+    transform: scale(1.3); }
+  .ingredients__item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px; }
+
+.menus {
+  padding: 100px 0;
+  min-height: 750px;
+  background: url(images/pattern_2.png), linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%);
+  background-blend-mode: overlay;
+  background-size: contain;
+  box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1); }
+  .menus__item {
+    padding: 15px 0; }
+  .menus__title {
+    padding: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cc9900;
+    font-family: "Yeseva One", cursive;
+    font-size: 21px;
+    line-height: 1.5em;
+    color: #cc9900; }
+  .menus__description {
+    padding: 7px 0px; }
+
+.testimonials {
+  padding: 100px 0px;
+  min-height: 750px;
+  background-image: url(images/bg_dish.jpeg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center; }
+  .testimonials__item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px; }
+    .testimonials__item p {
+      font-family: "Gentium Book Basic", serif;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.5em;
+      margin: 50px 0px; }
+
+.reservation {
+  padding: 100px 0px;
+  min-height: 750px;
+  background: url(images/pattern.jpeg), linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+  background-blend-mode: overlay;
+  background-size: contain;
+  box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+img {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
