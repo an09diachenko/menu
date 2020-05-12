@@ -14,8 +14,42 @@
     }
     
     &__form {
-        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 20px;
     }
+    &__form input {
+        display: block;
+        font-style: italic;
+        border: 1px solid #ccc;
+        padding: 7px 50px 7px 8px;
+    }
+    &__form input:focus {
+        outline: none;
+        border-color: $color_orange;
+    }
+    
+    &__form p {
+        display: block;
+        padding: 20px 0 0 0;
+        color: $color_orange;
+        font: {
+            weight: bold;
+            size: 14px;
+        }
+        text-align: left;
+    }
+}
+
+.button {
+    margin: 30px auto;
+}
+.button input {
+    background-color: $color_orange;
+    color: $color_white;
+    font-style: normal;
+    padding: 10px 60px;
 }
 
 img {

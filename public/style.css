@@ -164,8 +164,48 @@ p {
   background-size: contain;
   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
   text-align: center; }
+  .reservation__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px; }
+  .reservation__form input {
+    display: block;
+    font-style: italic;
+    border: 1px solid #ccc;
+    padding: 7px 50px 7px 8px; }
+  .reservation__form input:focus {
+    outline: none;
+    border-color: #cc9900; }
+  .reservation__form p {
+    display: block;
+    padding: 20px 0 0 0;
+    color: #cc9900;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; }
+
+.button {
+  margin: 30px auto; }
+
+.button input {
+  background-color: #cc9900;
+  color: #fff;
+  font-style: normal;
+  padding: 10px 60px; }
 
 img {
   width: 100%; }
+
+.footer {
+  padding: 100px 0px;
+  background-color: #4c4c4c;
+  color: #fff;
+  text-align: center; }
+  .footer__images {
+    padding-top: 30px; }
+  .footer img {
+    width: 45px;
+    height: 30px; }
 
 /*# sourceMappingURL=style.css.map */
